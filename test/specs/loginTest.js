@@ -2,7 +2,7 @@ import { expect } from '@wdio/globals'
 import LoginPage from '../pageobjects/loginPage.js'
 import InventoryPage from '../pageobjects/inventoryPage.js'
 
-// Positive Test:
+// Positive Login Test:
 describe('The website', () => {
     it('should login properly', async () => {
         await LoginPage.open();
@@ -11,7 +11,7 @@ describe('The website', () => {
     })
 })
 
-// Negative Test:
+// Negative Login Test:
 describe('The website', () => {
     it('should not login', async () => {
         await LoginPage.open();

@@ -2,6 +2,7 @@ import { expect } from '@wdio/globals'
 import LoginPage from '../pageobjects/loginPage.js'
 import InventoryPage from '../pageobjects/inventoryPage.js'
 
+// Logs in and adds an item to the cart
 describe('The website', () => {
     it('should login properly and add an item to the cart', async () => {
         await LoginPage.open();

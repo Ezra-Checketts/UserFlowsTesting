@@ -59,6 +59,14 @@ class InventoryPage extends BasePage {
         return $('#back-to-products');
     }
 
+    get hamburgerMenu () {
+        return $('.bm-burger-button');
+    }
+
+    get logout () {
+        return $('#logout_sidebar_link');
+    }
+
     // Functions:
     async clickElement (element) {
         await element.click();

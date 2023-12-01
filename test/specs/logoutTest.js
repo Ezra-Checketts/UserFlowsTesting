@@ -9,6 +9,7 @@ describe('The website', () => {
         await LoginPage.login('standard_user', 'secret_sauce');
         await expect(InventoryPage.appLogo).toExist();
         await InventoryPage.clickElement(InventoryPage.hamburgerMenu);
+        await expect(InventoryPage.logout).toBeClickable();
         await InventoryPage.clickElement(InventoryPage.logout);
         await expect(LoginPage.loginLogo);
     })

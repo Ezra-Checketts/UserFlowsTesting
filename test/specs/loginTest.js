@@ -15,7 +15,7 @@ describe('The website', () => {
 describe('The website', () => {
     it('should not login', async () => {
         await LoginPage.open();
-        await LoginPage.login('s', 'secret_sauce');
+        await LoginPage.login('incorrect', 'secret_sauce');
         await expect(LoginPage.loginLogo).toExist();
     })
 })
